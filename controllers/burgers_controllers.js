@@ -1,5 +1,5 @@
 const express = require('express');
-const burger = require('./burger.js');
+const burger = require('../models/burger.js');
 
 const router = express.Router();
 
@@ -54,4 +54,4 @@ router.delete('/api/burgers/:id', (req, res) => {
   });
 });
 // Export routes for server.js to use.
-modules.export = router;
+module.exports = router;

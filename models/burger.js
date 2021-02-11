@@ -1,5 +1,5 @@
 // import orm
-const orm = require('./config/orm.js'
+const orm = require('../config/orm.js');
 
 const burger = {
     all(cb) {
