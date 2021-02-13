@@ -6,13 +6,15 @@ const burger = {
         orm.all('burgers', (res) => cb(res));
       },
       // The variables cols and vals are arrays.
-      create(cols, vals, cb) {
-        orm.create('burgers', cols, vals, (res) => cb(res));
+      create(name, cb) {
+        orm.create('burgers', ["burger_name", "devoured"], [name, false], (res) => cb(res));
       },
-      update(objColVals, condition, cb) {
-        orm.update('burgers', objColVals, condition, (res) => cb(res));
+      update(id, cb) {
+        const condition = "id=" + id;
+        orm.update('burgers', {devoured: true}, condition, (res) => cb(res));
       },
-      delete(condition, cb) {
+      delete(id, cb) {
+        const condition = "id=" + id;
         orm.delete('burgers', condition, (res) => cb(res));
       },
 }
