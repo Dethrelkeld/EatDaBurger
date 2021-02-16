@@ -6,8 +6,8 @@
   {{#each burgers}}
   {{#unless devoured}}
   <li>
-  {{this.burger_name}}
-  {{!-- {{}} --}}
+    {{this.burger_name}}
+    
   </li>
   {{/unless}}
   {{/each}}
@@ -18,8 +18,8 @@
 <ul>
   {{#each burgers}}
   {{#if devoured}}
-<li>
- {{this.burger_name}}
+  <li>
+    {{this.burger_name}}
   </li>
   {{/if}}
   {{/each}}
@@ -33,7 +33,7 @@
     <input type="text" id="burger-input" name="name">
   </div>
 
-  
+
 
   <button id="submitBtn" type="submit">Add It!</button>
 </form>
