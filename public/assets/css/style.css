@@ -1,7 +1,15 @@
-html {
+/* 
  font-family: 'Homemade Apple', cursive;
+ */
+
+
+
+.rough {
+ font-family: 'Rock Salt', cursive;
+    
 };
 
-body {
-    background-color: aliceblue;
+.row {
+    padding: 10px;
+    margin-top: 10px;
 }
