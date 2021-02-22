@@ -1,23 +1,20 @@
 <div class="container">
-  <div class="row">
+  <div class="row mx-auto mt-4 mb-4">
+    
+      <h1 class="display-1 rough text-center">Eat Da Burgahs!</h1>
 
-
-    <h1  class="display-1 rough">Eat Da Burgahs!</h1>
   </div>
-  <div class="row">
+  <div class="row mt-4">
     <div class="col-4">
-
-
-
       <h3 class="rough">Available Burgahs</h3>
 
-      <ul>
+      <ul class="cursive">
         {{#each burgers}}
         {{#unless devoured}}
-        <li >
+        <li>
           {{this.burger_name}}
           <div>
-            <button type="submit" class='burgerDevour' value="{{this.id}}"> Devour Me!</button>
+            <button type="submit" class='burgerDevour cursive btn btn-dark' value="{{this.id}}"> Devour Me!</button>
 
           </div>
         </li>
@@ -32,7 +29,7 @@
     <div class="col-4">
       <h3 class="rough">Devoured Burgahs</h3>
 
-      <ul>
+      <ul class="cursive">
         {{#each burgers}}
         {{#if devoured}}
         <li>
@@ -52,10 +49,10 @@
         <form id="create-form">
 
           <div class="form-group">
-            <label for="burger-input">Name Your Burger:</label>
+            <label for="burger-input" class="cursive">Name Your Burger:</label>
             <input type="text" id="burger-input" name="name">
           </div>
-          <button id="submitBtn" type="submit">Add It!</button>
+          <button id="submitBtn" type="submit" class="cursive btn btn-dark">Add It!</button>
         </form>
       </div>
 

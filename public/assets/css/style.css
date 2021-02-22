@@ -1,15 +1,11 @@
-/* 
- font-family: 'Homemade Apple', cursive;
- */
+.cursive {
+    font-family: 'Homemade Apple', cursive;
 
+}
+ 
 
 
 .rough {
  font-family: 'Rock Salt', cursive;
     
 };
-
-.row {
-    padding: 10px;
-    margin-top: 10px;
-}
